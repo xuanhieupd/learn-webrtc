@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Hoang Xuan Hieu</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=vietnamese" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+<body>
+	<div class="room-connecting-wrapper">
+		<div class="room-connecting-content">
+			<header class="room-connecting-content-header">
+                <h1>You're about to enter a video conversation room on application</h1>
+            </header>
+
+            <div class="video-preview-wrapper hidden">
+				<div class="camera-off-icon">
+					<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						<title>camera-off</title>
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="assets" sketch:type="MSArtboardGroup" transform="translate(-425.000000, -348.000000)"><path class="fill" d="M449,361.166332 L449,369.99724 C449,371.103334 448.109942,372 446.999894,372 L438.166333,372 L435.207107,374.959226 C434.816583,375.34975 434.183418,375.34975 433.792893,374.959226 C433.402369,374.568702 433.402369,373.935537 433.792893,373.545012 L450.792893,356.545012 C451.183417,356.154487 451.816582,356.154487 452.207107,356.545012 C452.597631,356.935536 452.597631,357.568701 452.207107,357.959225 L449,361.166332 Z M446.337905,359 L434.000106,359 C432.890058,359 432,359.896666 432,361.00276 L432,369.99724 C432,370.904781 432.599451,371.667945 433.422447,371.915458 L446.337905,359 Z M450,362 L454,358 L454,373 L450,369 L450,362 Z" id="camera-off" fill="#FFFFFF" sketch:type="MSShapeGroup"></path><g id="slices" sketch:type="MSLayerGroup" transform="translate(425.000000, 348.000000)"></g></g></g>
+					</svg>
+				</div>
+				<p class="text-body-sub">Cam/mic not active</p>
+			</div>
+
+			<video style="width: 100%; height: 260px; background: green" id="streamLocal"></video>
+			<video style="width: 100%; height: 260px; background: yellow" id="streamRemote"></video>
+
+			<p class="text-body-main" style="margin: 18px 0px">To use application</p>
+			<button class="btn btn-request-user-media-access btn-block">Allow cam/mic access</button>
+			<p class="text-body-sub subtext"><em>You can turn your video off any time inside the room.</em></p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="dist/client.min.js"></script>
+</body>
+</html>
